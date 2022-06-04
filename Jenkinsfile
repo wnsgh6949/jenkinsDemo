@@ -2,11 +2,10 @@ pipeline {
     agent any
 
     stages {
-
-    }
-    post {
-        always {
-            echo "202206"
+        stage('Time') {
+            steps {
+                echo 'Hello World'
+            }
         }
     }
 }
